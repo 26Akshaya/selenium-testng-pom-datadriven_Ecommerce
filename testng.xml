@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UI Automation Suite" verbose="1" parallel="false">
+
+    <test name="LoginTests">
+        <classes>
+            <class name="com.example.automation.tests.LoginTest"/>
+            <class name="com.example.automation.tests.OrderTest"/>
+        </classes>
+    </test>
+    
+
+</suite>

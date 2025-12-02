@@ -1,0 +1,4 @@
+# Created at 2025-12-01T20:08:35.653
+
+Two tests in the same suite [UI Automation Suite] cannot have the same name: LoginTests
+
