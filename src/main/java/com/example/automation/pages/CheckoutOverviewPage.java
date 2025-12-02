@@ -14,7 +14,6 @@ public class CheckoutOverviewPage extends BasePage {
     @FindBy(id = "finish")
     private WebElement finishButton;
 
-    // Wait until we are on the overview page (step two)
     public void waitForOverviewPage() {
         WebDriver driver = DriverFactory.getDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -25,7 +24,7 @@ public class CheckoutOverviewPage extends BasePage {
         WebDriver driver = DriverFactory.getDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        // Wait until Finish button is clickable, then click
+      
         wait.until(ExpectedConditions.elementToBeClickable(finishButton));
         finishButton.click();
     }

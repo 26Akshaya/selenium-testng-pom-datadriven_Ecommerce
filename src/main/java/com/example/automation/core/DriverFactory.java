@@ -31,7 +31,7 @@ public class DriverFactory {
         driver.set(webDriver);
 
         webDriver.manage().window().maximize();
-        // IMPORTANT: give Selenium time to find elements
+       
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 

@@ -24,7 +24,6 @@ public class CheckoutPage extends BasePage {
     private WebElement continueButton;
 
     public boolean isLoaded() {
-        // We expect URL like: https://www.saucedemo.com/checkout-step-one.html
         String currentUrl = driver.getCurrentUrl();
         return currentUrl.contains("checkout-step-one");
     }
@@ -34,10 +33,8 @@ public class CheckoutPage extends BasePage {
         WebDriver webDriver = DriverFactory.getDriver();
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
 
-        // 1. Wait until we are on the correct page
         wait.until(ExpectedConditions.urlContains("checkout-step-one"));
 
-        // 2. Wait until the first-name field is visible
         wait.until(ExpectedConditions.visibilityOf(firstNameInput));
 
         firstNameInput.clear();
